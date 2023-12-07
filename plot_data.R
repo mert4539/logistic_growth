@@ -1,10 +1,10 @@
 #Script to plot the logistic growth data
-file.choose()
+
 growth_data <- read.csv("/cloud/project/experiment1.csv")
 
-install.packages("ggplot2")
 library(ggplot2)
 
+# Plotting the population size over time:
 ggplot(aes(t,N), data = growth_data) +
   
   geom_point() +
@@ -15,6 +15,7 @@ ggplot(aes(t,N), data = growth_data) +
   
   theme_bw()
 
+# Plotting the log-transformed population size over time:
 ggplot(aes(t,N), data = growth_data) +
   
   geom_point() +
@@ -25,6 +26,7 @@ ggplot(aes(t,N), data = growth_data) +
   
   scale_y_continuous(trans='log10')
 
+# Extracting the information for the packages used:
 sink(file = "package-versions.txt")
 sessionInfo()
 sink()
