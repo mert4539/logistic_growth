@@ -14,6 +14,7 @@ The goal of this analysis is to model the population growth of E.coli bacteria. 
 * Rplot2.pdf - growth semilog plot with absolute values on x axis and log transformed values on y axis (linear)
 * fit_linear_model.R - fitting linear model to estimate model parameters
 * plot_data_and_model.R - plotting the model predictions against the raw data
+* question3.R - code for making a plot comparing logistic and exponential growth
 
 ## Results
 
@@ -41,4 +42,5 @@ Unsurprisingly, the exponential growth estimate is much larger than the logistic
 
 # QUESTION 3:  
 
-B
+![Q3_Rplot](https://github.com/tgbhujm/logistic_growth/assets/150151014/a8bd46da-4287-493e-8c46-f10f439b0b37)
+
