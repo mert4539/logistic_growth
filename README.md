@@ -1,5 +1,6 @@
 # Modelling E.coli population growth
 
+# QUESTION 1:  
 ## Description
 The goal of this analysis is to model the population growth of E.coli bacteria. More specifically, the project estimates the initial population size (N), the growth rate (r), and the carrying capacity (K) in a reproducible manner. This is done using two linear models: during the initial stages of growth, the population size (N) grows exponentially, so N has to be log-transformed before a linear model can be fitted to this part of the data. During the later stages of growth, resource abundance decerases, so the population size remains constant, and can hence directly be described using a linear model (no transformations required). The population growth parameters estimated by the models are then plotted against the raw data. The analysis is carried out in R scripts on Posit cloud, and subsequently pushed to GitHub.
 
@@ -20,10 +21,20 @@ During the initial stages of growth, the linear model relating time (t) to the l
 
 During the later stages of growth, when resources are depleted, the population size is constant. This means that the corresponding linear model has no slope, only an intercept. The value of this intercept represents the carrying capacity: K = 6x10^10 = 60 000 000 000.  
 
-Data used: experiment1.csv
+Data used: experiment1.csv   
 
 ## Acknowledgements
 José Gabriel Niño Barreat
 
 ## License
 This project is licensed under the MIT license.
+
+# QUESTION 2:  
+
+If we assume that the population grows exponentially even at t = 4980, then the population size at that timepoint can be described by the following equation: N(t) = N0 x e^(rt). Using the estimates N0 = 986.5075 and r = 0.0100086, we can calculate: N(4980) = 986.5075 x e^(0.0100086 x 4980) = 4.37 x 10^24.  
+However, given that resources become depleted overtime, it is likely that at timepoint t = 4980 the population size will be constant, rather than staying exponential. Under logistic growth, the predicted population size at that timepoint would be described by the following equation: N(t) = [K x N0 x e^(rt)] / [K – N0 + N0 x e^(rt)]. Using the estimates N0 = 986.5075, r = 0.0100086 and K = 60 000 000 000, we can calculate: N(4980) = [6 x 10^10 x 986.5075 x e^(0.0100086 x 4980)] / [6x10^10 – 986.5075 + 986.5075 x e^(0.0100086 x 4980)] = [2.6225 x 10^35] / [4.3708 x 10^24] = 60 000 000 137 = 6 x 10^10.  
+Unsurprisingly, the exponential growth estimate is much larger than the logistic growth estimate. More specifically, if the bacterial population was continuing to grow exponentially at t = 4980, its population size would be [4.37x10^24]/[6x10^10] = 7.28 x 10^13 times larger than what was actually observed in the experiment.  
+
+# QUESTION 3:  
+
+B
