@@ -31,8 +31,12 @@ This project is licensed under the MIT license.
 
 # QUESTION 2:  
 
+* Use your estimates of N0 and r to calculate the population size at t = 4980 min, assuming that the population grows exponentially. How does it compare to the population size predicted under logistic growth?  
+
 If we assume that the population grows exponentially even at t = 4980, then the population size at that timepoint can be described by the following equation: N(t) = N0 x e^(rt). Using the estimates N0 = 986.5075 and r = 0.0100086, we can calculate: N(4980) = 986.5075 x e^(0.0100086 x 4980) = 4.37 x 10^24.  
+
 However, given that resources become depleted overtime, it is likely that at timepoint t = 4980 the population size will be constant, rather than staying exponential. Under logistic growth, the predicted population size at that timepoint would be described by the following equation: N(t) = [K x N0 x e^(rt)] / [K – N0 + N0 x e^(rt)]. Using the estimates N0 = 986.5075, r = 0.0100086 and K = 60 000 000 000, we can calculate: N(4980) = [6 x 10^10 x 986.5075 x e^(0.0100086 x 4980)] / [6x10^10 – 986.5075 + 986.5075 x e^(0.0100086 x 4980)] = [2.6225 x 10^35] / [4.3708 x 10^24] = 60 000 000 137 = 6 x 10^10.  
+
 Unsurprisingly, the exponential growth estimate is much larger than the logistic growth estimate. More specifically, if the bacterial population was continuing to grow exponentially at t = 4980, its population size would be [4.37x10^24]/[6x10^10] = 7.28 x 10^13 times larger than what was actually observed in the experiment.  
 
 # QUESTION 3:  
