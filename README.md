@@ -43,5 +43,7 @@ Unsurprisingly, the exponential growth estimate is much larger than the logistic
 
 # QUESTION 3:  
 
-![Q3_Rplot](https://github.com/tgbhujm/logistic_growth/assets/150151014/a8bd46da-4287-493e-8c46-f10f439b0b37)
+![Q3_Rplot](https://github.com/tgbhujm/logistic_growth/assets/150151014/a8bd46da-4287-493e-8c46-f10f439b0b37)  
+
+NOTE: The y-axis is log-transformed (as indicated by the y-axis tick marks), so that is why the exponential line appears linear.
 
