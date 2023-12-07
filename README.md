@@ -5,12 +5,15 @@ The goal of this analysis is to model the population growth of E.coli bacteria. 
 
 ## Repo content overview
 
-
-## Programming language
-R version 4.3.2
-
-## Packages
-
+* README.md
+* LICENSE - details regarding collaborator rights
+* package-versions.txt - record of the packages used
+* plot_data.R - plotting the data from experiment 1
+* Rplot1.pdf - growth plot with absolute values on both x and y axis (logistic)
+* Rplot2.pdf - growth semilog plot with absolute values on x axis and log transformed values on y axis (linear)
+* fit_linear_model.R - fitting linear model to estimate model parameters
+* plot_data_and_model.R - plotting the model predictions against the raw data
+* project.Rproj -
 
 ## Results
 
