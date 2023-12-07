@@ -22,9 +22,6 @@ During the later stages of growth, when resources are depleted, the population s
 
 Data used: experiment1.csv
 
-## References
-
-
 ## Acknowledgements
 José Gabriel Niño Barreat
 
