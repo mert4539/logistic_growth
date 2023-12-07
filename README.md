@@ -2,7 +2,7 @@
 
 # QUESTION 1:  
 ## Description
-The goal of this analysis is to model the population growth of E.coli bacteria. More specifically, the project estimates the initial population size (N), the growth rate (r), and the carrying capacity (K) in a reproducible manner. This is done using two linear models: during the initial stages of growth, the population size (N) grows exponentially, so N has to be log-transformed before a linear model can be fitted to this part of the data. During the later stages of growth, resource abundance decerases, so the population size remains constant, and can hence directly be described using a linear model (no transformations required). The population growth parameters estimated by the models are then plotted against the raw data. The analysis is carried out in R scripts on Posit cloud, and subsequently pushed to GitHub.
+The goal of this analysis is to model the population growth of E.coli bacteria. More specifically, the project estimates the initial population size (N0), the growth rate (r), and the carrying capacity (K) in a reproducible manner. This is done using two linear models: during the initial stages of growth, the population size (N) grows exponentially, so N has to be log-transformed before a linear model can be fitted to this part of the data to estimate N0 and r. During the later stages of growth, resource abundance decreases, so the population size remains constant, and can hence directly be described using a linear model with just an intercept (no transformations required). This second model is used to estimate K. The population growth predictions based on the models are then plotted against the raw data. The analysis is carried out in R scripts on Posit cloud, and subsequently pushed to GitHub.
 
 ## Repo content overview
 
@@ -10,11 +10,12 @@ The goal of this analysis is to model the population growth of E.coli bacteria. 
 * LICENSE - details regarding collaborator rights
 * package-versions.txt - record of the packages used
 * plot_data.R - plotting the data from experiment 1
-* Rplot1.pdf - growth plot with absolute values on both x and y axis (logistic)
-* Rplot2.pdf - growth semilog plot with absolute values on x axis and log transformed values on y axis (linear)
 * fit_linear_model.R - fitting linear model to estimate model parameters
 * plot_data_and_model.R - plotting the model predictions against the raw data
 * question3.R - code for making a plot comparing logistic and exponential growth
+* Rplot1.pdf - growth plot with absolute values on both x and y axis (logistic)
+* Rplot2.pdf - growth semilog plot with absolute values on x axis and log transformed values on y axis (linear)
+* Rplot3.pdf - plot comparing logistic vs exponential growth from question3.R
 
 ## Results
 
